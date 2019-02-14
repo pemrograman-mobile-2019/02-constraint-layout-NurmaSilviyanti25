@@ -6,9 +6,22 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="305dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="442dp"
+        android:layout_height="307dp"
+        android:background="#FF4763" />
+
     <Button
         android:id="@+id/button3"
-        android:layout_width="magtch_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
@@ -29,6 +42,14 @@
         app:layout_constraintTop_toBottomOf="@+id/button3" />
 
     <Button
+        android:id="@+id/button2"
+        android:layout_width="416dp"
+        android:layout_height="299dp"
+        android:background="#FFFFFF"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="307dp" />
+
+    <Button
         android:id="@+id/button5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -47,6 +68,10 @@
         android:text="RIGHT ABOVE BUTTOM"
         app:layout_constraintBottom_toTopOf="@+id/button5"
         app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+
 </android.support.constraint.ConstraintLayout>
 
 
